@@ -65,7 +65,7 @@ const ShowcaseSection = () => {
               </div>
 
               <div className='text-content flex flex-col gap-4'>
-                <h2 className='title'>Control & Monitor your IoT with internet with a User-Friendly app called <span className='highlight'>SycnMon</span></h2>
+                <h2 className='title'>Control & Monitor your IoT with internet with a User-Friendly app called <span className='highlight'>SyncMon</span></h2>
                 <p className='text-white-50 md:text-xl'>An android app for managing and monitoring IoT devices built using <span className='highlight'>Android Studio</span></p>
                 <Button
                   className='md:w-100 md:h-16 w-80 h-12 self-center xl:self-start'

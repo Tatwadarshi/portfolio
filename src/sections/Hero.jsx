@@ -70,7 +70,7 @@ const Hero = () => {
         {/* Right: 3D Model */}
         <figure>
           <div className="hero-3d-layout">
-            {isMobile ?  <><img className=' relative top-48' src={asset_server_base_url+'/images/room_preview.png'} alt='Room' /> <p className='self-center text-center relative top-18 p-4 text-2xl text-orange-500'>Please use desktop or laptop for better experience</p></> : <HeroEperience />}
+            {false ?  <><img className=' relative top-48' src={asset_server_base_url+'/images/room_preview.png'} alt='Room' /> <p className='self-center text-center relative top-18 p-4 text-2xl text-orange-500'>Please use desktop or laptop for better experience</p></> : <HeroEperience />}
             {/* <HeroEperience /> */}
           </div>
         </figure>

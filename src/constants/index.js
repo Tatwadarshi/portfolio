@@ -3,6 +3,7 @@ import { pingpong } from "three/src/math/MathUtils.js";
 import { label } from "three/tsl"
 
 
+// export const asset_server_base_url = "";
 export const asset_server_base_url = "https://cdn.jsdelivr.net/gh/Tatwadarshi/portfolio_assets_server/"
 
 export const words = [

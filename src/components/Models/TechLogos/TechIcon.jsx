@@ -46,36 +46,6 @@ const TechIcon = ({ model }) => {
   
   const { scene } = useGLTF(asset_server_base_url + model.modelPath)
 
-  useEffect(() => {
-    if (model.modelPath === asset_server_base_url + "/models/three.js-logo.glb") {
-        scene.traverse((child) => {
-            if (child.isMesh && child.name === "Object_5") {
-                child.material = new THREE.MeshStandardMaterial({ color: 'white'})
-                child.material.opacity = 0.8
-            }
-        })
-    }
-
-    if (model.modelPath === asset_server_base_url + "/models/blender-logo.glb") {
-        scene.traverse((child) => {
-            if (child.isMesh) {
-              if(child.name == "blue"){
-                child.material = new THREE.MeshStandardMaterial({ color: '#265787'})
-                child.material.opacity = 0.8
-              }
-              if(child.name == "white"){
-                child.material = new THREE.MeshStandardMaterial({ color: 'white'})
-                child.material.opacity = 0.8
-              }
-              if(child.name == "brown"){
-                child.material = new THREE.MeshStandardMaterial({ color: '#EA7600'})
-                child.material.opacity = 0.8
-              }
-            }
-        })
-    }
-  }, [scene])
-
   return (
     <Canvas> 
         <ambientLight intensity={0.3} />

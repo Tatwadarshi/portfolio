@@ -10,5 +10,5 @@ const Room = () => {
     </group>
   )
 }
-useGLTF.preload(asset_server_base_url+"/models/optimized-room.glb");
+useGLTF.preload(asset_server_base_url + "/models/optimized-room.glb");
 export default Room
