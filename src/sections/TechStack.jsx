@@ -36,8 +36,8 @@ const TechStack = () => {
               <div className='tech-card-animated-bg' />
               <div className="tech-card-content">
                 <div className="tech-icon-wrapper">
-                  {icon.modelPath && (<TechIcon model={icon} />)}
-                  {icon.imgPath && (<img className='w-30 mybounce' src={asset_server_base_url + icon.imgPath} alt={icon.name} />)}
+                  {icon.modelPath && icon.load3D && (<TechIcon model={icon} />)}
+                  {icon.imgPath && !icon.load3D && (<img className='w-30 mybounce' src={asset_server_base_url + icon.imgPath} alt={icon.name} />)}
                 </div>
 
                 <div className=' padding-x w-full'>
