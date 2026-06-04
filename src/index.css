@@ -9,6 +9,8 @@
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
   --default-transition: all 200ms ease-in-out;
+  --primary-color: rgb(162, 63, 255);
+  --secondary-color: rgb(205, 130, 255);
 }
 
 html,
