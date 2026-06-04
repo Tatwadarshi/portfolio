@@ -9,8 +9,6 @@
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
   --default-transition: all 200ms ease-in-out;
-  --primary-color: rgb(162, 63, 255);
-  --secondary-color: rgb(205, 130, 255);
 }
 
 html,
@@ -20,6 +18,8 @@ body {
   background-color: black;
   color: white;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(162, 63, 255) #00000000;
   /* font-family: "Mona Sans", sans-serif; */
   /* font-family: Poppins sans-serif; */
   font-family: Sansita, sans-serif;
