@@ -533,8 +533,9 @@ section {
 }
 
 .star{
-  @apply text-yellow-400 text-3xl
+  @apply text-yellow-400 text-5xl
 }
+
 .mybounce{
   animation: myBounce 0.6s ease-in-out infinite alternate;
 }
@@ -546,4 +547,9 @@ section {
   100% {
     transform: translateY(-0.5rem);
   }
+}
+
+.required::before{
+  color: #db3947;
+  content: "*";
 }
