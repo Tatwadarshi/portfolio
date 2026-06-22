@@ -130,7 +130,7 @@ const Testimonials = () => {
           ))}
         </div>
 
-        <div id='review-write' className=' my-3 mx-auto p-10 w-[60%] bg-black-100 rounded-xl'>
+        <div id='review-write' className=' my-3 mx-auto p-10 md:w-[70%] bg-black-100 rounded-xl'>
           <h2 className='text-3xl'>Give your review here</h2>
           <form
           ref={formRef}
