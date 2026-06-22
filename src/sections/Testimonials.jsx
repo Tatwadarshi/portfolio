@@ -5,6 +5,7 @@ import GlowCard from '../components/GlowCard'
 import { db, databases } from '../appwriteConfig'
 import Button from '../components/Button'
 import { ID, TablesDB } from 'appwrite'
+import { div } from 'three/tsl'
 
 const Testimonials = () => {
 
@@ -117,7 +118,7 @@ const Testimonials = () => {
                   <GlowCard key={index} card={{ desc: review }} stars={stars} index={index}>
                     <div className='flex flex-col items-start gap-3'>
                       <div className='flex gap-3'>
-                        <img className='rounded-full size-11' src={imgPath} alt={name} />
+                        {imgPath == null ? <div className=' flex items-center justify-center text-black text-[2rem] rounded-full size-11 bg-purple-500'>{name[0].toUpperCase()}</div> :  <img className='rounded-full size-11' src={imgPath} alt={name} />}
                         <div>
                           <p className='font-bold'>{name}</p>
                           <p className='text-white-50'>{mentions}</p>
