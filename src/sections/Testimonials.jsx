@@ -78,14 +78,14 @@ const Testimonials = () => {
           sub="⭐ Client Feedback and Testimonials Highlights"
         />
 
-        {/* <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
+        <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
           {
             testimonials.map(({ name, mentions, review, imgPath, stars, show }, index) => (
               show &&
               <GlowCard key={index} card={{ desc: review }} stars={stars} index={index}>
                 <div className=' flex flex-col items-start gap-3'>
                   <div className=' flex gap-3'>
-                    <img className=' rounded-full size-11' src={imgPath} alt={name} />
+                    {imgPath == null ? <div className=' flex items-center justify-center text-black text-[2rem] rounded-full size-11 bg-purple-500'>{name[0].toUpperCase()}</div> :  <img className='rounded-full size-11' src={imgPath} alt={name} />}
                     <div >
                       <p className='font-bold'>{name}</p>
                       <p className='text-white-50'>{mentions}</p>
@@ -95,10 +95,10 @@ const Testimonials = () => {
               </GlowCard>
             ))
           }
-        </div> */}
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 items-start">
-          {/* Loop exactly 3 times to create our vertical masonry tracks */}
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 items-start">
+          // Loop exactly 3 times to create our vertical masonry tracks 
           {[0, 1, 2].map((colIndex) => (
             <div 
               key={colIndex} 
@@ -129,7 +129,7 @@ const Testimonials = () => {
                 ))}
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div id='review-write' className=' my-3 mx-auto p-10 md:w-[70%] bg-black-100 rounded-xl'>
           <h2 className='text-3xl'>Give your review here</h2>
