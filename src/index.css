@@ -139,10 +139,10 @@ section {
     }
 
     nav.desktop {
-      @apply hidden lg:flex items-center;
+      @apply hidden lg:flex items-center lg:space-x-12;
 
       ul {
-        @apply flex space-x-8;
+        @apply lg:flex space-x-8;
 
         li {
           @apply text-white-50 relative;

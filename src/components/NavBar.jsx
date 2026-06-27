@@ -41,23 +41,25 @@ const NavBar = () => {
             ))}
           </ul>
         </nav>
+        <div>
+          <Button
+            className='contact-btn group rounded-sm'
+            id={"contactbtn"}
+            action={() => {
+              const target = document.getElementById("contact");
+              if (target) {
+                const offset = window.innerHeight * 0.15;
+                const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({
+                  top,
+                  behavior: 'smooth'
+                });
+              }
+            }}
+            text={`Contact me`}
+          />
+        </div>
 
-        <Button
-          className='contact-btn group rounded-sm'
-          id={"contactbtn"}
-          action={() => {
-            const target = document.getElementById("contact");
-            if (target) {
-              const offset = window.innerHeight * 0.15;
-              const top = target.getBoundingClientRect().top + window.scrollY - offset;
-              window.scrollTo({
-                top,
-                behavior: 'smooth'
-              });
-            }
-          }}
-          text={`Contact me`}
-        />
       </div>
     </header>
   )

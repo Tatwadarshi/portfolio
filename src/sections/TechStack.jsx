@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { db } from '../appwriteConfig'
 import TitleHeader from '../components/TitleHeader'
-import { asset_server_base_url, techStackIcons } from '../constants'
+import { asset_server_base_url} from '../constants'
 import { div } from 'three/tsl'
 import TechIcon from '../components/Models/TechLogos/TechIcon'
 
